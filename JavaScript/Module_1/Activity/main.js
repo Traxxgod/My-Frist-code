@@ -9,10 +9,10 @@ let cwd = process.cwd();
 
 let mainDirPath = path.join(cwd, mainDir);
 let isMainModulePresent = fs.existsSync(mainDirPath);
-if (isMainModulePresent) {
-    // console.log("Directory is already created");
-    // return;
-} else {
+// if (isMainModulePresent) {
+//     // console.log("Directory is already created");
+//     // return;
+// } else {
     // console.log(mainDir, " created");
     fs.mkdirSync(mainDirPath);
     let topicFromInput = inputArr.slice(1, 4);
